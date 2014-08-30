@@ -64,7 +64,7 @@ Use `ls -l` to check that the permissions have changed.
 ##Shell questions
 
 1. What option with the command `rm` is required to remove a directory?
-  - rmdir
+  - **Answer:** *YOUR ANSWER HERE*
 1. What is the command used to display the manual pages for any command?
   - **Answer:** *YOUR ANSWER HERE*
 1. What command will show the first 5 lines of an input file?
