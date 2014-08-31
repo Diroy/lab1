@@ -74,15 +74,15 @@ chmod a+rw science.txt chmod go-rwx backups ls -l
 ##Shell questions
 
 1. What option with the command `rm` is required to remove a directory?
-  - **Answer:** *YOUR ANSWER HERE*
+  - rmdir directory
 1. What is the command used to display the manual pages for any command?
-  - **Answer:** *YOUR ANSWER HERE*
+  - help/man/info <commando>
 1. What command will show the first 5 lines of an input file?
-  - **Answer:** *YOUR ANSWER HERE*
+  - head -5 <filename.txt>
 1. What command can be used to rename a file?
-  - **Answer:** *YOUR ANSWER HERE*
+  - mv [file1] [file2]
 1. What option can we given to `ls` to show the hidden files?
-  - **Answer:** *YOUR ANSWER HERE*
+  - ls -a
 1. What will the command `cat -n file` do?
   - **Answer:** *YOUR ANSWER HERE*
 1. What will the command `echo -n hello` do?
