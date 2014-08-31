@@ -19,7 +19,7 @@ Please use [markdown](https://help.github.com/articles/markdown-basics) formatin
 
 Make another directory inside the `unixstuff` directory called `backups`
 
-**Answer:** *YOUR ANSWER HERE*
+~/unixstuff$ mkdir backups
 
 ###Exercise 1b
 
@@ -27,31 +27,41 @@ Use the commands `cd`, `ls` and `pwd` to explore the file system.
 
 (Remember, if you get lost, type `cd` by itself to return to your home-directory)
 
-**Answer:** *YOUR ANSWER HERE*
+cd backups pwd cd ls
 
 ###Exercise 2a
 
 Create a backup of your `science.txt` file by copying it to a file called `science.bak`
 
-**Answer:** *YOUR ANSWER HERE*
+mv science.bak backups/
 
 ###Exercise 2b
 
 Create a directory called `tempstuff` using `mkdir`, then remove it using the `rmdir` command.
 
-**Answer:** *YOUR ANSWER HERE*
+mkdir tempstuff rmdir tem[tab]
 
 ###Exercise 3a
 
 Using the above method, create another file called `list2` containing the following fruit: orange, plum, mango, grapefruit. Read the contents of `list2`.
 
-**Answer:** *YOUR ANSWER HERE*
+cat > list2
+orange
+plum
+mango
+grapefruit
+cat list2
+dsuppiah@badne7:~$ cat list2
+orange
+plum
+mango
+grapefruit
 
 ###Exercise 3b
 
 Using pipes, display all lines of `list1` and `list2` containing the letter 'p', and sort the result.
 
-**Answer:** *YOUR ANSWER HERE*
+grep p list1 list2 | sort
 
 ###Exercise 5a
 
@@ -59,7 +69,7 @@ Try changing access permissions on the file `science.txt` and on the directory `
 
 Use `ls -l` to check that the permissions have changed.
 
-**Answer:** *YOUR ANSWER HERE*
+chmod a+rw science.txt chmod go-rwx backups ls -l
 
 ##Shell questions
 
