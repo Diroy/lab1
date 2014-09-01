@@ -104,19 +104,19 @@ chmod a+rw science.txt chmod go-rwx backups ls -l
 
 ##vi questions
 1. How do we save a file in `vi` and continue working?
-  - **Answer:** *YOUR ANSWER HERE*
+  - :w
 1. What command/key is used to start entering text?
-  - **Answer:** *YOUR ANSWER HERE*
+  - while in COMMANDO mode press the "i" key. Then you can start type text.
 1. What are the different modes the editor can be in?
-  - **Answer:** *YOUR ANSWER HERE*
+  - COMMANDO/INSERT mode
 1. What command can be used to place the cursor at the beginning of line 4?
-  - **Answer:** *YOUR ANSWER HERE*
+  - ^ COMMANDO, would end up in the beginning of the current line
 1. What will `dd` command do (in command-mode)?
-  - **Answer:** *YOUR ANSWER HERE*
+  - It deletes the whole line that the cursor is at
 1. How do you undo the most recent changes?
-  - **Answer:** *YOUR ANSWER HERE*
+  - u COMMANDO
 1. How do you move back one word?
-  - **Answer:** *YOUR ANSWER HERE*
+  - b
 
 ##The C Language and Make tool Questions
 
