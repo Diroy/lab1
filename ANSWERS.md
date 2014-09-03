@@ -121,15 +121,15 @@ chmod a+rw science.txt chmod go-rwx backups ls -l
 ##The C Language and Make tool Questions
 
 1. How do you use `gcc` to only produce the `.o` file?  What is the difference between generating only the `.o` file, and building the `hello` executable done in the previous compilation above?
-  - **Answer:** *YOUR ANSWER HERE*
+  - gcc [sourcefile] -c, an example is to make a library, the object file is not linked.
 1. Give the command for compiling with `debug` enabled instead of normal compilation for the two examples shown in Listing 2 and Listing 3. Explain how to turn debugging on/off for the two cases.
-  - **Answer:** *YOUR ANSWER HERE*
+  - Listing 2: gcc -DDEBUG <sourcefile>. Listing 3: global var debug must be changed in source in order to toggle.
 1. Give a brief pros and cons discussion for the two methods to add debug code shown in Listing 2 and Listing 3.
-  - **Answer:** *YOUR ANSWER HERE*
+  - Listing2: There you have to change it before it starts to compile, Listing3: Here you can change it while debugging.
 1. Provide the command for generating the *map* file. Which of the `gcc` tools is responsible for producing a *map* file?
-  - **Answer:** *YOUR ANSWER HERE*
+  - gcc helloworld.c -Wl,-Map=mappy.map, linkeren
 1. What is the content of each of the sections in a *map* file. Explain briefly.
-  - **Answer:** *YOUR ANSWER HERE*
+  - The map shows address resolutions, .data, .code, etc sections size and position, archive members included and allocated symbols and their assigned value.
 1. Rewrite `hello.c` to produce entries in the *map* file for `.data`, `.bss`, and `.rodata`. Hint: This can be done by adding one variable for each type to the file.
   - **Answer:** *YOUR ANSWER HERE*
 1. Add the following function to `hello.c`: `double multiply(double x1, double x2)`, which returns `x1*x2`. Use `gcc` to generate an assembly code listing for the program, and examine the assembly code. What assembly instructions are used to do this? Repeat this task, but now replace `double` with `float`. Explain!
