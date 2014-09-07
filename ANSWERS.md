@@ -145,7 +145,6 @@ registers on both accounts.
   - The source file is 'newer' than the currently compiled file, or the file does not exist.
 1. How do you implement an *include guard*, and why is it needed?
   - Include guards prevent common libraries and headers being imported several times. It looks like this:
-
 #ifndef IHAVEBEENHERE
 #define IHAVEBEENHERE
 // do header
