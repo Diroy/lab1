@@ -133,13 +133,22 @@ chmod a+rw science.txt chmod go-rwx backups ls -l
 1. Rewrite `hello.c` to produce entries in the *map* file for `.data`, `.bss`, and `.rodata`. Hint: This can be done by adding one variable for each type to the file.
   - **Answer:** *YOUR ANSWER HERE*
 1. Add the following function to `hello.c`: `double multiply(double x1, double x2)`, which returns `x1*x2`. Use `gcc` to generate an assembly code listing for the program, and examine the assembly code. What assembly instructions are used to do this? Repeat this task, but now replace `double` with `float`. Explain!
-  - **Answer:** *YOUR ANSWER HERE*
+  - gcc -O -S dmult.c (took the liberty of optimizing) 
+Examining dmult.s & fmult.s: mulsd %xmm1, %xmm0 scalar double 
+as opposed to mulss %xmm1, %xmm0 scalar single mult. 
+instruction. Single (float) operates on half the bit-size of double. 
+It is thus curious how gcc chooses to use the 128bit XMM 
+registers on both accounts.
 1. How does `make` know if a file must be recompiled?
-  - **Answer:** *YOUR ANSWER HERE*
+  - The source file is 'newer' than the currently compiled file, or the file does not exist.
 1. Provide a `make` command to use a file named `mymakefile` instead of the default `makefile`.
-  - **Answer:** *YOUR ANSWER HERE*
+  - The source file is 'newer' than the currently compiled file, or the file does not exist.
 1. How do you implement an *include guard*, and why is it needed?
-  - **Answer:** *YOUR ANSWER HERE*
+  - Include guards prevent common libraries and headers being imported several times. It looks like this:
+#ifndef IHAVEBEENHERE
+#define IHAVEBEENHERE
+// do header
+#endif
 
 ##Library Task
 
